@@ -1,0 +1,2 @@
+class VisitorQuestion < ApplicationRecord
+end

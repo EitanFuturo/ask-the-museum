@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="title">Preguntas de visitantes</h1>
+
+<% @visitor_questions.each do |visitor_question| %>
+  <div class="box">
+    <%= visitor_question.text %>
+  </div>
+  <br>
+<% end %>
+
+<br>
+
+<%= link_to 'Hacé tu pregunta', new_visitor_question_path, class: 'button is-primary' %>

@@ -1,0 +1,26 @@
+<%= form_with(model: visitor_question) do |form| %>
+  <% if visitor_question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(visitor_question.errors.count, "error") %> prohibited this visitor_question from being saved:</h2>
+
+      <ul>
+        <% visitor_question.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <div class="label">
+      <%= form.label 'Hacé tu pregunta' %>
+    </div>
+    <div class="label">
+      <%= form.text_area :text, class: 'input' %>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <%= form.submit('Guardar pregunta', class: 'button is-primary') %>
+  </div>
+<% end %>
