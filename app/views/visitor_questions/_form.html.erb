@@ -10,6 +10,30 @@
       </ul>
     </div>
   <% end %>
+  <div class="field">
+    <div class="label">
+      <%= form.label 'Nombre' %>
+    </div>
+    <div class="label">
+      <%= form.text_field :visitor_name, class: 'input' %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= form.label 'Edad' %>
+    </div>
+    <div class="label">
+      <%= form.number_field :visitor_age, class: 'input' %>
+    </div>
+  </div>
+  <div class="field">
+    <div class="label">
+      <%= form.label 'Locación' %>
+    </div>
+    <div class="label">
+      <%= form.text_field :visitor_location, class: 'input' %>
+    </div>
+  </div>
 
   <div class="field">
     <div class="label">

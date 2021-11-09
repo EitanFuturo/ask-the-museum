@@ -4,7 +4,10 @@
 
 <% @visitor_questions.each do |visitor_question| %>
   <div class="box">
-    <%= visitor_question.text %>
+    <strong>Nombre:</strong> <%= visitor_question.visitor_name %> <br>
+    <strong> Edad:</strong> <%= visitor_question.visitor_age %> <br>
+    <strong>Locación:</strong> <%= visitor_question.visitor_location %> <br>
+    <strong>Pregunta:</strong> <%= visitor_question.text %>
   </div>
   <br>
 <% end %>
