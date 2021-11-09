@@ -1,0 +1,20 @@
+<section class="hero">
+  <div class="hero-body">
+    <p class="subtitle">
+      Gracias por dejarnos tu pregunta.
+      El museo te regala una:
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container is-fluid">
+    <div class="notification is-warning">
+      <%= MuseumQuestion::QUESTIONS.sample %>
+    </div>
+
+    <div class="buttons">
+      <%= link_to 'Preguntas de visitantes', visitor_questions_path, class: 'button is-primary' %>
+    </div>
+  </div>
+</section>

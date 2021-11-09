@@ -22,16 +22,7 @@ class VisitorQuestionsController < ApplicationController
   # POST /visitor_questions or /visitor_questions.json
   def create
     @visitor_question = VisitorQuestion.new(visitor_question_params)
-
-    respond_to do |format|
-      if @visitor_question.save
-        format.html { redirect_to visitor_questions_path, notice: "Visitor question was successfully created." }
-        format.json { render :show, status: :created, location: @visitor_question }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @visitor_question.errors, status: :unprocessable_entity }
-      end
-    end
+    @visitor_question.save
   end
 
   # PATCH/PUT /visitor_questions/1 or /visitor_questions/1.json

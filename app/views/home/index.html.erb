@@ -4,31 +4,13 @@
       Preguntale al Museo
     </p>
     <p class="subtitle">
-      Llevate una pregunta y dejá otra.
-    </p>
+      Gran parte del trabajo del museo es hacerse preguntas: sobre los objetos, sobre las distintas civilizaciones y sobre nosotrxs mismxs también. Nos encantaría conocer qué preguntas te surgieron a vos, en qué te quedaste pensando o qué te quedo dando vueltas
+      ¿Te gustaría compartirnos una pregunta?</p>
   </div>
 </section>
 
 <div class="container is-fluid">
   <div class="notification is-warning">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus pellentesque lacus ac commodo. Nullam at auctor felis, sit amet egestas nulla. Donec id arcu quis felis ultricies scelerisque et eu ex. Morbi sollicitudin augue sed tellus lobortis, blandit viverra lorem facilisis. In maximus ex a malesuada sodales. Donec consequat fringilla lacus, mattis convallis libero elementum sit amet. Phasellus venenatis, sem et convallis eleifend, diam sem euismod nisi, a facilisis felis ligula varius risus. Pellentesque lacinia ex nunc, vel molestie velit porta interdum. Proin quis ultrices turpis.
-
-    Praesent vehicula metus tristique viverra iaculis. Cras eu ante ac ligula pulvinar laoreet a ultrices ante. Vivamus porttitor urna eget mauris viverra tincidunt. Sed a sagittis leo, ut cursus neque. Nunc nec maximus velit, at imperdiet elit. Donec ante quam, aliquet nec dolor non, viverra porta eros. Suspendisse lacinia congue felis, ut iaculis justo varius id. Vestibulum mattis nisi vel metus luctus, eget egestas augue viverra.
-
-    Ut id posuere augue. Suspendisse tincidunt lacus non enim porttitor pharetra at id nibh. Suspendisse laoreet lectus eget augue semper semper. Cras nec urna cursus, viverra velit sed, feugiat elit. Sed ac mauris ac augue varius tincidunt ac non arcu. Integer vel erat non nibh fringilla semper. Nulla urna enim, imperdiet ut ipsum pretium, posuere porta magna. Proin metus magna, condimentum vel nibh id, tempor tempor purus. Suspendisse id nibh sit amet massa fermentum tempus eget at erat. Vestibulum lorem nunc, mattis vitae rutrum quis, rhoncus ac nibh. In ante neque, condimentum ut massa at, imperdiet vestibulum ligula. Nullam ultrices porta purus in fermentum.
-
-    Fusce imperdiet in metus eu vehicula. In hac habitasse platea dictumst. Nam faucibus elit felis, et lobortis ipsum molestie a. Phasellus malesuada eget enim eget sodales. Curabitur et facilisis sapien. Aenean condimentum ante sit amet nulla fringilla, in finibus tortor vulputate. Praesent vitae mattis lacus. Nullam vitae nulla auctor, egestas nunc faucibus, eleifend mauris.
-
-    Sed nec dui sem. Phasellus ut lectus id urna gravida tincidunt eu nec dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur quam turpis, scelerisque et quam id, vehicula convallis odio. Cras ultricies finibus felis eget tincidunt. Quisque id facilisis purus. Cras ac rutrum felis. Mauris nec lectus neque. Nam tempor erat ac rhoncus aliquet. In suscipit suscipit neque sed commodo. Maecenas ultrices ante elit, nec viverra dui commodo sit amet. Nunc sit amet hendrerit metus. Sed aliquet ligula nec congue volutpat. Nulla condimentum odio quis justo semper, nec posuere risus placerat. Fusce interdum ex erat, auctor tristique lorem rutrum ut.
-  </div>
-</div>
-<br>
-<div class="container is-fluid">
-  <div class="notification is-warning">
-    ¿Esto es una pregunta del Museo?
-  </div>
-
-  <div class="buttons">
-    <%= link_to 'Hacé tu pregunta', new_visitor_question_path, class: 'button is-primary' %>
+    <%= render 'visitor_questions/form'%>
   </div>
 </div>
